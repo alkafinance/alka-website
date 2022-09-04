@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+      url('/fonts/Inter-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: italic;
+    src: url('/fonts/Inter-Italic.woff2') format('woff2'),
+      url('/fonts/Inter-Italic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
+      url('/fonts/Poppins-Bold.woff') format('woff');
+  }
+}
+
+@layer utilities {
+  @supports (height: 100dvh) {
+    .h-screen {
+      height: 100dvh;
+    }
+
+    .min-h-screen {
+      min-height: 100dvh;
+    }
+
+    .max-h-screen {
+      max-height: 100dvh;
+    }
+  }
+}
