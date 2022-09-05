@@ -20,7 +20,7 @@ export default function Layout({children}: LayoutProps) {
             </a>
           </Link>
 
-          <nav className="hidden items-center space-x-2 text-sm font-medium text-gray-800 md:flex">
+          <nav className="flex items-center space-x-2">
             <a
               href="https://alkafinance.notion.site/Alka-User-Guide-35c8c898dbc14fca992d029a33ea2f5e"
               target="_blank"

@@ -60,8 +60,9 @@
     ]
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "1.0.0",
     "@react-three/fiber": "8.6.2",
-    "daisyui": "2.24.0",
+    "framer-motion": "7.2.1",
     "next": "12.2.5",
     "next-seo": "5.5.0",
     "phosphor-react": "1.4.1",
@@ -81,6 +82,7 @@
     "@typescript-eslint/eslint-plugin": "5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "autoprefixer": "10.4.8",
+    "daisyui": "2.24.0",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-tailwindcss": "3.6.1",
@@ -91,6 +93,7 @@
     "prettier": "2.7.1",
     "prettier-plugin-packagejson": "2.2.18",
     "tailwindcss": "3.1.8",
+    "tailwindcss-radix": "2.5.0",
     "typescript": "4.8.2"
   },
   "engines": {
