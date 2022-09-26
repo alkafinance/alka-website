@@ -29,14 +29,14 @@ export default function Index() {
 
         <p>
           Stop struggling with complicated spreadsheets, scattered data, and
-          inflexible systems. We've created the perfect tool for those who
+          inflexible systems. We&apos;ve created the perfect tool for those who
           expect more clarity in less time.
         </p>
 
         <p>
           <button
             type="button"
-            className="btn btn-primary text-base"
+            className="btn-primary btn text-base"
             onClick={() => window.open('mailto:hello@alka.app')}>
             Request access
           </button>
@@ -48,7 +48,7 @@ export default function Index() {
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Dialog.Trigger asChild>
-                <button className="btn btn-primary btn-circle">
+                <button className="btn-primary btn-circle btn">
                   <Play weight="fill" />
                 </button>
               </Dialog.Trigger>
@@ -93,7 +93,7 @@ export default function Index() {
                 />
 
                 <Dialog.Close asChild>
-                  <button className="btn btn-ghost btn-circle absolute top-[-3rem] right-0 text-lg text-white md:top-0 md:right-[-3rem]">
+                  <button className="btn-ghost btn-circle btn absolute top-[-3rem] right-0 text-lg text-white md:top-0 md:right-[-3rem]">
                     <X />
                   </button>
                 </Dialog.Close>
@@ -132,7 +132,8 @@ export default function Index() {
 
             <FeatureCard title="Offline updates" icon={<Hourglass />}>
               <p>
-                You don't have to wait to land to update any of your accounts.
+                You don&apos;t have to wait to land to update any of your
+                accounts.
               </p>
             </FeatureCard>
 

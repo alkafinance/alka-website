@@ -1,6 +1,6 @@
 import {Canvas, useFrame, useThree} from '@react-three/fiber'
 import React, {Suspense} from 'react'
-import type {BufferGeometry, Material, Mesh} from 'three'
+import type {Mesh} from 'three'
 import {Color} from 'three'
 
 // Adapted from https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/
@@ -17,7 +17,7 @@ export function Gradient() {
 }
 
 function GradientMesh() {
-  const mesh = React.useRef<Mesh<BufferGeometry, Material | Material[]>>(null)
+  const mesh = React.useRef<Mesh>(null)
   const uniforms = React.useMemo(
     () => ({
       u_time: {value: 0.0},
@@ -29,6 +29,7 @@ function GradientMesh() {
   )
   const {viewport} = useThree()
   useFrame((state) => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-explicit-any
     ;(mesh.current as any).material.uniforms.u_time.value =
       state.clock.getElapsedTime()
   })

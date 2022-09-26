@@ -29,12 +29,12 @@ function Header() {
   return (
     <header
       className={twMerge(
-        'sticky z-[10] top-0',
-        scrollY > 0 && 'bg-white border-b border-b-black/10',
+        'sticky top-0 z-[10]',
+        scrollY > 0 && 'border-b border-b-black/10 bg-white',
       )}>
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between p-4">
         <Link href="/">
-          <a className="btn btn-ghost h-auto p-0 hover:bg-transparent">
+          <a className="btn-ghost btn h-auto p-0 hover:bg-transparent">
             <Logo className="h-auto w-[3rem] text-black" />
           </a>
         </Link>
@@ -44,7 +44,7 @@ function Header() {
             href="https://alkafinance.notion.site/Alka-User-Guide-35c8c898dbc14fca992d029a33ea2f5e"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-ghost btn-sm">
+            className="btn-ghost btn-sm btn">
             User Guide
           </a>
 
@@ -52,7 +52,7 @@ function Header() {
             href="https://my.alka.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary btn-sm">
+            className="btn-primary btn-sm btn">
             Sign in
           </a>
         </nav>
@@ -66,7 +66,7 @@ function Footer() {
     <footer className="bg-white">
       <div className="mx-auto flex w-full max-w-3xl flex-col items-center space-y-6 px-4 py-12">
         <Link href="/">
-          <a className="btn btn-ghost h-auto p-0 hover:bg-transparent">
+          <a className="btn-ghost btn h-auto p-0 hover:bg-transparent">
             <Logo className="h-auto w-[3rem] text-black" />
           </a>
         </Link>

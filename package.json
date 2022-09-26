@@ -22,43 +22,6 @@
     "**/*.{js,ts,tsx,json,css,yml,yaml}": "prettier --write",
     "**/*.{js,ts,tsx}": "eslint --ext .js,.ts,.tsx --cache --fix"
   },
-  "eslintConfig": {
-    "plugins": [
-      "@typescript-eslint",
-      "tailwindcss"
-    ],
-    "extends": [
-      "next/core-web-vitals",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:tailwindcss/recommended"
-    ],
-    "rules": {
-      "arrow-body-style": "warn",
-      "object-shorthand": "warn",
-      "prefer-const": "warn",
-      "quotes": [
-        "warn",
-        "single"
-      ],
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/consistent-type-assertions": "warn",
-      "@typescript-eslint/consistent-type-imports": "warn",
-      "@typescript-eslint/no-empty-function": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-extra-semi": "off",
-      "@typescript-eslint/no-non-null-assertion": "off",
-      "@typescript-eslint/no-var-requires": "off",
-      "import/no-unresolved": "error",
-      "jsx-a11y/alt-text": "off",
-      "react/jsx-curly-brace-presence": "warn",
-      "react/no-unescaped-entities": "off"
-    },
-    "ignorePatterns": [
-      "**/__generated__/**",
-      "/.next/**",
-      "/public/**"
-    ]
-  },
   "dependencies": {
     "@radix-ui/react-dialog": "1.0.0",
     "@react-three/fiber": "8.8.3",
