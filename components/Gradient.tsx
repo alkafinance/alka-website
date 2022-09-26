@@ -34,7 +34,7 @@ function GradientMesh() {
   })
   return (
     <mesh ref={mesh}>
-      <planeBufferGeometry args={[viewport.width, viewport.height]} />
+      <planeGeometry args={[viewport.width, viewport.height]} />
       <shaderMaterial
         fragmentShader={fragmentShader}
         vertexShader={vertexShader}

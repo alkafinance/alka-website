@@ -3,7 +3,19 @@ import {Hero} from 'components/Hero'
 import Layout from 'components/Layout'
 import {motion} from 'framer-motion'
 import Image from 'next/future/image'
-import {Play, X} from 'phosphor-react'
+import {
+  Hourglass,
+  Lightning,
+  ListDashes,
+  Money,
+  Play,
+  SlackLogo,
+  Terminal,
+  UsersThree,
+  Vault,
+  X,
+} from 'phosphor-react'
+import React from 'react'
 import screenshotPng from 'static/screenshot.png'
 
 export default function Index() {
@@ -21,17 +33,17 @@ export default function Index() {
           expect more clarity in less time.
         </p>
 
-        <button
-          type="button"
-          className="btn btn-primary btn-sm"
-          onClick={() => window.open('mailto:hello@alka.app')}>
-          Request access
-        </button>
-      </Hero>
+        <p>
+          <button
+            type="button"
+            className="btn btn-primary text-base"
+            onClick={() => window.open('mailto:hello@alka.app')}>
+            Request access
+          </button>
+        </p>
 
-      <div className="mx-auto w-full max-w-3xl px-4 py-12">
         <Dialog.Root>
-          <div className="relative shadow-xl">
+          <div className="relative mt-16 shadow-xl">
             <Image src={screenshotPng} alt="Screenshot from the Alka web app" />
 
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -89,7 +101,94 @@ export default function Index() {
             </Dialog.Content>
           </Dialog.Portal>
         </Dialog.Root>
+      </Hero>
+
+      <div className="border-t border-t-black/10 bg-white">
+        <div className="prose mx-auto w-full max-w-3xl px-4 py-12">
+          <h2 className="font-display font-bold">
+            Personalized finances that simply work
+          </h2>
+
+          <p>
+            Being able to trust and understand your financial data means gives
+            you the empowerment to confidently make the most important decisions
+            in life.
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+            <FeatureCard title="Build for speed" icon={<Lightning />}>
+              <p>
+                Actions in Alka are created in an instant, so you can work as
+                fast as you think.
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Double entry engine" icon={<Money />}>
+              <p>
+                Underneath our graceful interface, lies the gold standard of
+                data models.
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Offline updates" icon={<Hourglass />}>
+              <p>
+                You don't have to wait to land to update any of your accounts.
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Stay in command" icon={<Terminal />}>
+              <p>
+                With our Alka Omnibar, all of your financial data is at your
+                fingertips.
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Multiple ledgers" icon={<ListDashes />}>
+              <p>
+                Separate your personal and business finances or mix them however
+                you want.
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Collaborative nature" icon={<UsersThree />}>
+              <p>
+                Shared finances with your spouse or business partner? We got
+                you!
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="9,500+ banks" icon={<Vault />}>
+              <p>
+                Easily connect all your accounts through Plaid, Yodlee and Venmo
+              </p>
+            </FeatureCard>
+
+            <FeatureCard title="Slack integration" icon={<SlackLogo />}>
+              <p>Get important notifications directly in your Slack channel.</p>
+            </FeatureCard>
+          </div>
+        </div>
       </div>
     </Layout>
+  )
+}
+
+function FeatureCard({
+  title,
+  icon,
+  children,
+}: {
+  title: string
+  icon: React.ReactNode
+  children: React.ReactNode
+}) {
+  return (
+    <div className="card rounded-xl border border-black/10 bg-white">
+      <div className="card-body">
+        <span className="mb-4 text-3xl">{icon}</span>
+        <span className="card-title font-display font-bold">{title}</span>
+        {children}
+      </div>
+    </div>
   )
 }
