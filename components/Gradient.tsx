@@ -21,9 +21,9 @@ function GradientMesh() {
   const uniforms = React.useMemo(
     () => ({
       u_time: {value: 0.0},
-      u_bg: {value: new Color('#fff')},
-      u_colorA: {value: new Color('#FCFDFE')},
-      u_colorB: {value: new Color('#EFF1F7')},
+      u_bg: {value: new Color('#FFF')},
+      u_colorA: {value: new Color('#FFFAEE')},
+      u_colorB: {value: new Color('#EEF3FF')},
     }),
     [],
   )

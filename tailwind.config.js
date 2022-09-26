@@ -1,7 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
-// https://access.mymind.com/colors/eyJ0IjoiUGFyYWRpc28iLCJjIjpbIiNGMkYyRjIiLCIjMDAwMDAwIiwiIzBCNjRGRSJdfQ
 const palette = {
   'kashmir-blue': {
     DEFAULT: '#5166A0',
@@ -64,7 +63,6 @@ module.exports = {
           '--animation-btn': '0.25s',
           '--animation-input': '0.2s',
           '--btn-text-case': 'none',
-          '--btn-focus-scale': '1',
           '--tab-radius': '0.25rem',
         },
       },
