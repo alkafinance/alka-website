@@ -61,7 +61,7 @@ export default function Index() {
 
             <Dialog.Content asChild forceMount>
               <motion.div
-                className="fixed top-[50%] left-[50%] z-[1010] flex w-[calc(90vw-6rem)] flex-col"
+                className="fixed top-[50%] left-[50%] z-[1010] flex w-screen flex-col md:w-[calc(90vw-6rem)]"
                 initial={{opacity: 0, x: '-50%', y: '-50%', scale: 0.95}}
                 animate={{
                   opacity: 1,
@@ -81,7 +81,7 @@ export default function Index() {
                 />
 
                 <Dialog.Close asChild>
-                  <button className="btn btn-ghost btn-sm btn-circle absolute top-0 right-[-2rem] text-white">
+                  <button className="btn btn-ghost btn-circle absolute top-[-3rem] right-0 text-lg text-white md:top-0 md:right-[-3rem]">
                     <X />
                   </button>
                 </Dialog.Close>
