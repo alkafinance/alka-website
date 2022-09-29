@@ -116,14 +116,14 @@ export default function Index() {
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-            <FeatureCard title="Build for speed" icon={<Lightning />}>
+            <FeatureCard title="Built for speed" icon={<Lightning />}>
               <p>
                 Actions in Alka are created in an instant, so you can work as
                 fast as you think.
               </p>
             </FeatureCard>
 
-            <FeatureCard title="Double entry engine" icon={<Money />}>
+            <FeatureCard title="Double–entry engine" icon={<Money />}>
               <p>
                 Underneath our graceful interface, lies the gold standard of
                 data models.
